@@ -42,12 +42,12 @@
             "label": "docker-build",
             "platform": "node",
             "dockerBuild": {
-                "dockerfile": "${workspaceFolder}/webapp-client/Dockerfile",
-                "context": "${workspaceFolder}/webapp-client",
+                "dockerfile": "${workspaceFolder}/webapp-client/node_modules/debug/Dockerfile",
+                "context": "${workspaceFolder}/webapp-client/node_modules/debug",
                 "pull": true
             },
             "node": {
-                "package": "${workspaceFolder}/webapp-client/package.json"
+                "package": "${workspaceFolder}/webapp-client/node_modules/debug/package.json"
             }
         },
         {
@@ -58,7 +58,7 @@
             ],
             "platform": "node",
             "node": {
-                "package": "${workspaceFolder}/webapp-client/package.json"
+                "package": "${workspaceFolder}/webapp-client/node_modules/debug/package.json"
             }
         },
         {
@@ -74,7 +74,7 @@
                 }
             },
             "node": {
-                "package": "${workspaceFolder}/webapp-client/package.json",
+                "package": "${workspaceFolder}/webapp-client/node_modules/debug/package.json",
                 "enableDebugging": true
             }
         }
